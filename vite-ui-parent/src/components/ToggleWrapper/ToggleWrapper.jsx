@@ -1,10 +1,15 @@
-import { Toggle } from 'sapphire-ui-toggle';
-
+import { Toggle } from '@sapphireui/toggle';
+import styled from 'styled-components';
+const StyledWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+`
 export default function ToggleWrapper() {
   return (
-    <div>
+    <StyledWrapper>
       <Toggle size="md" />
       <Toggle size="lg" />
-    </div>
+    </StyledWrapper>
   )
 }
