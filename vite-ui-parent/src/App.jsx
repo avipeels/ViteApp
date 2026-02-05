@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import './App.css'
 
 import ToggleWrapper from './components/ToggleWrapper/ToggleWrapper';
-import PortfolioHome from './components/PortfolioHome/PortfolioHome';
+import Portfolio from './components/PortfolioHome/Portfolio';
 
 function Home() {
 
@@ -29,7 +29,7 @@ function App() {
       <div className="app">
         <main className="main">
           <Routes>
-            <Route path="/" element={<PortfolioHome />} />
+            <Route path="/" element={<Portfolio />} />
             <Route path="/toggle" element={<ToggleWrapper />} />
           </Routes>
         </main>
