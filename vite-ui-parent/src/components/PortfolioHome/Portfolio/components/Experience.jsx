@@ -133,9 +133,17 @@ const Experience = () => {
                                             <div key={idx} className="project-item">
                                                 <strong>{project.name}</strong>
                                                 {project.description && <p>{project.description}</p>}
-                                                {project.skills && <p><strong>Skills:</strong> {project.skills}</p>}
+                                                {project.skills && (
+                                                    <div className="project-skills">
+                                                        {project.skills.split(',').map((skill, sIdx) => (
+                                                            <span key={sIdx} className="project-skill-tag">
+                                                                {skill.trim()}
+                                                            </span>
+                                                        ))}
+                                                    </div>
+                                                )}
                                                 {project.highlights && (
-                                                    <ul>
+                                                    <ul className="project-highlights">
                                                         {project.highlights.map((highlight, hIdx) => (
                                                             <li key={hIdx}>{highlight}</li>
                                                         ))}
