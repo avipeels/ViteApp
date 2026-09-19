@@ -1106,10 +1106,46 @@ section { padding: 7rem 0; }
     }
 
     .nav-container {
-        padding: var(--spacing-sm) var(--spacing-md);
+        padding: 0.65rem var(--spacing-md);
     }
 
     .logo {
         font-size: 1.5rem;
+    }
+}
+
+/* Keep the mobile chrome compact so the active section gets most of the
+   viewport, while preserving the more spacious desktop layout. */
+@media (max-width: 768px) {
+    .nav-container {
+        padding-top: 0.65rem;
+        padding-bottom: 0.65rem;
+    }
+
+    .hero {
+        padding-top: 5.5rem;
+        padding-bottom: 3rem;
+    }
+
+    section {
+        padding: 3.5rem 0;
+    }
+
+    .section-title {
+        margin-bottom: 2rem;
+    }
+
+    .footer {
+        padding: 1.5rem 0;
+    }
+
+    /* The timeline already provides the rail offset. Keep projects aligned
+       with the entry content instead of adding a second mobile inset. */
+    .timeline-item {
+        padding-left: 2rem;
+    }
+
+    .project-item {
+        padding: 1.5rem 0;
     }
 }
