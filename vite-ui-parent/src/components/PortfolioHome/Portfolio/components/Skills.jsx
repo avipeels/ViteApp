@@ -23,7 +23,7 @@ const Skills = () => {
     return (
         <section id="skills" className="skills">
             <div className="container">
-                <h2 className="section-title">Technical Skills</h2>
+                <p className="eyebrow">My toolkit</p><h2 className="section-title">Tools are useful. Judgment is the skill.</h2>
                 <div className="skills-grid">
                     {skillCategories.map((category, idx) => (
                         <div key={idx} className="skill-category glass-card">

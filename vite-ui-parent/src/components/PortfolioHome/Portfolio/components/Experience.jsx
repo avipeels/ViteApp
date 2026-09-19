@@ -8,7 +8,7 @@ const Experience = () => {
             company: "Lowe's India",
             duration: 'Dec 2021 - Present · 4 yrs 3 mos',
             location: 'Bengaluru, Karnataka, India',
-            tag: 'Back-End Web Development and Google Cloud Platform (GCP)',
+            tag: 'Frontend Engineering and Google Cloud Platform (GCP)',
             description: null,
             projects: []
         },
@@ -105,7 +105,7 @@ const Experience = () => {
     return (
         <section id="experience" className="experience">
             <div className="container">
-                <h2 className="section-title">Experience</h2>
+                <p className="eyebrow">Selected chapters</p><h2 className="section-title">Where I’ve learned to build.</h2>
                 <div className="timeline">
                     {experiences.map((exp) => (
                         <div key={exp.id} className="timeline-item">
