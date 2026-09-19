@@ -10,7 +10,10 @@ const Navigation = () => {
     return (
         <nav className="nav">
             <div className="nav-container">
-                <a href="#" className="logo">AP</a>
+                <a href="#home" className="logo" aria-label="Avinash Peelukhana — home">
+                    <span className="logo-mark">AP</span>
+                    <span className="logo-name">Avinash Peelukhana</span>
+                </a>
                 <ul className={`nav-menu ${mobileMenuOpen ? 'active' : ''}`}>
                     <li><a href="#home" className="nav-link" onClick={() => setMobileMenuOpen(false)}>Home</a></li>
                     <li><a href="#about" className="nav-link" onClick={() => setMobileMenuOpen(false)}>About</a></li>
@@ -22,6 +25,7 @@ const Navigation = () => {
                     className={`mobile-menu-toggle ${mobileMenuOpen ? 'active' : ''}`}
                     onClick={toggleMobileMenu}
                     aria-label="Toggle menu"
+                    aria-expanded={mobileMenuOpen}
                 >
                     <span></span>
                     <span></span>

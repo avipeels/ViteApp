@@ -34,12 +34,12 @@ const Portfolio = () => {
 
             if (currentScroll > 100) {
                 if (nav) {
-                    nav.style.background = 'hsla(230, 25%, 8%, 0.95)';
-                    nav.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.3)';
+                    nav.style.background = 'hsla(35, 38%, 96%, 0.96)';
+                    nav.style.boxShadow = '0 4px 20px rgba(78, 48, 25, 0.10)';
                 }
             } else {
                 if (nav) {
-                    nav.style.background = 'hsla(230, 25%, 8%, 0.8)';
+                    nav.style.background = 'hsla(35, 38%, 96%, 0.86)';
                     nav.style.boxShadow = 'none';
                 }
             }

@@ -6,7 +6,6 @@ const Experience = () => {
             id: 1,
             title: 'Senior Software Engineer',
             company: "Lowe's India",
-            logo: '🏢',
             duration: 'Dec 2021 - Present · 4 yrs 3 mos',
             location: 'Bengaluru, Karnataka, India',
             tag: 'Back-End Web Development and Google Cloud Platform (GCP)',
@@ -17,7 +16,6 @@ const Experience = () => {
             id: 2,
             title: 'Senior Software Engineer',
             company: 'Publicis Sapient',
-            logo: '💡',
             duration: 'Feb 2020 - Dec 2021 · 1 yr 11 mos',
             location: 'Bengaluru, Karnataka, India',
             tag: null,
@@ -28,7 +26,6 @@ const Experience = () => {
             id: 3,
             title: 'Senior Software Developer',
             company: 'PwC',
-            logo: '🔷',
             duration: 'Jun 2018 - Jan 2020 · 1 yr 8 mos',
             location: 'Bengaluru, Karnataka, India',
             tag: null,
@@ -65,7 +62,6 @@ const Experience = () => {
             id: 4,
             title: 'Application Development Senior Analyst',
             company: 'Accenture',
-            logo: '⚡',
             duration: 'Aug 2013 - May 2018 · 4 yrs 10 mos',
             location: 'Bengaluru Area, India',
             tag: null,
@@ -116,7 +112,6 @@ const Experience = () => {
                             <div className="timeline-marker"></div>
                             <div className="timeline-content glass-card">
                                 <div className="company-header">
-                                    <div className="company-logo">{exp.logo}</div>
                                     <div className="company-info">
                                         <h3>{exp.title}</h3>
                                         <h4>{exp.company}</h4>
