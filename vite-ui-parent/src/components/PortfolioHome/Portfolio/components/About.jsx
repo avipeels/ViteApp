@@ -5,6 +5,17 @@ const About = () => {
         <section id="about" className="about">
             <div className="container">
                 <h2 className="section-title">About Me</h2>
+                <div className="about-details" aria-label="Personal details">
+                    <p>
+                        Based in <span>Bangalore Urban, Karnataka, India</span>
+                        <i aria-hidden="true" />
+                        Studied at <span>Vellore Institute of Technology</span>
+                        <i aria-hidden="true" />
+                        <span>Senior Software Engineer @ Lowe&apos;s India</span>
+                        <i aria-hidden="true" />
+                        <span>217 connections</span>
+                    </p>
+                </div>
                 <div className="about-content">
                     <div className="about-card glass-card">
                         <div className="about-icon">💼</div>
@@ -20,24 +31,6 @@ const About = () => {
                         <div className="about-icon">🎨</div>
                         <h3>Innovation Leader</h3>
                         <p>I initiated and developed enterprise wide UI component library system with storybook, react, lerna. Scripting Jenkins file to automatically publish the latest updates to Artifactory maintained in Google Cloud Platform.</p>
-                    </div>
-                </div>
-                <div className="about-details glass-card">
-                    <div className="detail-row">
-                        <span className="detail-label">Location:</span>
-                        <span className="detail-value">Bangalore Urban, Karnataka, India</span>
-                    </div>
-                    <div className="detail-row">
-                        <span className="detail-label">Education:</span>
-                        <span className="detail-value">Vellore Institute of Technology</span>
-                    </div>
-                    <div className="detail-row">
-                        <span className="detail-label">Current Role:</span>
-                        <span className="detail-value">Senior Software Engineer @ Lowe's India</span>
-                    </div>
-                    <div className="detail-row">
-                        <span className="detail-label">Connections:</span>
-                        <span className="detail-value">217 connections</span>
                     </div>
                 </div>
             </div>
